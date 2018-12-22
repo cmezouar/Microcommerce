@@ -1,7 +1,20 @@
 package com.ecommerce.microcommerce.model;
 
+import com.fasterxml.jackson.annotation.JsonFilter;
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+
+@Entity
+//@JsonFilter("myDynamicFilter"
 public class Product {
+    @Id //the id attribute can be identified
+    @GeneratedValue //as an auto-generated key
     private int id;
+    
     private String name;
     private int price;
 
