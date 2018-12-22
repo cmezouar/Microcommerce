@@ -14,7 +14,7 @@ public class Product {
     @Id //the id attribute can be identified
     @GeneratedValue //as an auto-generated key
     private int id;
-    
+
     private String name;
     private int price;
 
